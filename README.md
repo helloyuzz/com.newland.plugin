@@ -36,6 +36,6 @@ InitScanner() {
 <project_root>\angular.json
 ```xml
 "scripts": [
-      "plugins/com.newlanc.plugin/www/newlandscanner.js"
+      "plugins/com.newland.plugin/www/newlandscanner.js"
    ]
 ```
