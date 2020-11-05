@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.newland.plugin"
+        version="1.0.0">
+
+  <name>NewlandScanner</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/newlandscanner.js" target="js/newlandscanner.js"/>
+
+  <js-module src="www/newlandscanner.js" name="newlandscanner">
+    <clobbers target="newlandscanner" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="NewlandScanner">
+        <param name="android-package" value="com.newland.plugin.NewlandScanner"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/NewlandScanner.java" target-dir="src/com/newland/plugin/"/>
+    <source-file src="src/android/NewlandReceiver.java" target-dir="src/com/newland/plugin/"/>    
+  </platform>
+
+</plugin>
