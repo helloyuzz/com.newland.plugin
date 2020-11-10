@@ -1,5 +1,5 @@
 # com.newland.plugin
- 新大陆PDA适配
+ 新大陆PDA适配  
 **dev environment:**  
 >  angular 7.2.4 + Ionic 5.0.2  +	Cordova 9.0.0  
 
